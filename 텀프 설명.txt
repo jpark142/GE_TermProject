@@ -1,0 +1,18 @@
+1. 프로젝트 세팅에서 Support Sky Atmosphere Affecting Height Fog를 체크한 이유?
+-> 이것을 체크해 줌으로써 sky atmosphere 안개의 색깔을 자동으로 지정해주기 위해서이다.
+
+2. ExponetialHeightFog에서 volumetric Fog를 체크하는 이유?
+-> 포인트 라이트 산란 효과를 표현하기 위해서.
++태양의 크기 조절하는 법
+-> directoinal light->source angle
+
+3. BP_MySkySystem에서 skylight의 기능?
+-> 자연스러운 간접광 표현
+
+4. 스카이 라이트 적용 시 저녁 시간에도 sky light가 낮 시간대로 고정되어 어색한 라이팅을
+   보여주는데?
+-> sky light를 movable로 바꿔주고 real time capture 체크 박스를 체크한다.
++ 만약 고정된 주변 환경을 표현하고자 한다면?
+-> real time capture를 끄고 source type을 cubemap으로 설정한 후 cubemap을 지정해준다.
+
+
